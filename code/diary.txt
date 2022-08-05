@@ -1,4 +1,4 @@
 2022
 8.5：sorting
-8.8：Divide-and-Conquer
-8.9：basic algorithm
+8.7：Divide-and-Conquer
+8.8：basic algorithm

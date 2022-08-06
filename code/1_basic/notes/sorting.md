@@ -67,7 +67,9 @@
 
 - 时间复杂度：
     
-    ![image-20220806141726113](C:\Users\ifXie\AppData\Roaming\Typora\typora-user-images\image-20220806141726113.png)
+    - 最坏情况: T(n) = T(n-l)+T(O)+O(n) = T(n-1) +O(n)
+    - 最好情况: T(n) = 2T(n/2) + O(n)
+    - 平均情况: 任何一种常数比例的划分都会产生深度为O(logn) 的递归树，每一层的时间代价都是O(n)
     
 - 应用：
 

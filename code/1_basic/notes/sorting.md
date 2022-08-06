@@ -101,13 +101,6 @@
 - 代码参考：
 
     ``````c++
-    struct size{
-        double x, y;
-        bool operator <(const Node &b) const{
-    		return y<b.y;
-    	}
-    };
-    
     void merge_sort(int l, int r){
     	if(l >= r) return;
     	int mid = l+r>>1;

@@ -97,12 +97,14 @@
 ### 归并排序
 
 - 思想：
+
     - 拆成两部分，而每一部分再拆成两部分，重复直到无法继续划分，此时便能够比较出来。而进行回溯，将从最小部分返回到最开始，这个过程就是归并排序。
     - 分治的思想，不断从数组中取出当前最小值至辅助数组即可使其有序。
+
 - 应用：
   
-1. [逆序对](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1908.cpp)
-   
+  ​	1. [逆序对](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1908.cpp)
+  
 - 代码参考：
 
     ``````c++

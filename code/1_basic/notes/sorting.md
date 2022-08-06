@@ -52,9 +52,9 @@
 
     ``````c++
     void bubble_sort(int l,int r){
-    	for(int i=l;i<r;i++){
-    		for(int j=l;j<r-i+1;j++)
-    			if(a[j]>a[j+1]) swap(a[j],a[j+1]);
+    	for(int i=l; i<r; i++){
+    		for(int j=l; j<r-i; j++)
+    			if(a[j] > a[j+1]) swap(a[j],a[j+1]);
     	}
     }
     ``````
@@ -66,7 +66,7 @@
 - 思想：分治的思想，将数列划分为有相对大小关系两部分，递归到两个子序列中分别进行快速排序（之后不用合并，因为此时数列已经完全有序）
 
 - 时间复杂度：
-    
+  
     - 最坏情况: T(n) = T(n-l)+T(O)+O(n) = T(n-1) +O(n)
     - 最好情况: T(n) = 2T(n/2) + O(n)
     - 平均情况: 任何一种常数比例的划分都会产生深度为O(logn) 的递归树，每一层的时间代价都是O(n)
@@ -95,9 +95,9 @@
 
 - 思想：分治的思想，不断从数组中取出当前最小值至辅助数组即可使其有序。（快排在分的过程中要保持相对的大小关系）
 - 应用：
-    
+  
 1. [逆序对](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1908.cpp)
-    
+   
 - 代码参考：
 
     ``````c++

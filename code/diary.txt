@@ -2,10 +2,11 @@
 8.5：sorting
 8.7：Divide-and-Conquer
 8.8：basic algorithm
-8.9：stack、queue
-8.10：list
-8.11：tree，red-black tree
-8.12：BIT
-8.13：SegmentTree
-8.18：DP
+8.9：hash、hash table
+8.10：stack、queue
+8.11：list
+8.12：tree，red-black tree
+8.13：BIT
+8.14：SegmentTree
+8.19：DFS
 

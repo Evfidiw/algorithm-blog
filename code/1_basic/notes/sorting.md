@@ -103,7 +103,7 @@
 
 - 应用：
   
-  ​	1. [逆序对](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1908.cpp)
+  1. [逆序对](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1908.cpp)
   
 - 代码参考：
 

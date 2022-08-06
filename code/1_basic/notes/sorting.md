@@ -72,6 +72,10 @@
     平均情况:任何一种常数比例的划分都会产生深度为O(logn) 的递归树，其中每一层的时间代价都是O(n)
     $$
 
+- 应用：
+
+    1. [第k大数](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1138.cpp)
+    
 - 代码参考：
 
     ```c++
@@ -92,8 +96,7 @@
 
 - 思想：分治的思想，不断从数组中取出当前最小值至辅助数组即可使其有序。（快排在分的过程中要保持相对的大小关系）
 - 应用：
-    1. [第k大数]()
-    2. [逆序对]()
+    1. [逆序对](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1908.cpp)
 
 - 代码参考：
 

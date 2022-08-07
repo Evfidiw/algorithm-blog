@@ -22,9 +22,8 @@
 
 - 定义：即字面意思“分而治之”，把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。
     （摘自[维基百科](https://zh.wikipedia.org/wiki/%E5%88%86%E6%B2%BB%E6%B3%95)的定义）
-
 - 流程：分解 -- 解决 -- 合并
-
 - 应用：
+    	1. 快速排序、归并排序
+     	2. [折半搜索/二分法](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/notes/binary%20search.md)
 
-    ​	1. [折半搜索/二分法]()

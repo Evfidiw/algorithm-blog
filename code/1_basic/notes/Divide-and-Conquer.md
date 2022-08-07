@@ -10,6 +10,21 @@
     - 斐波那契数列
     - ……
 
+- *代入法求解递归式
+
+    - 步骤：
+
+        1. 猜测解的形式
+        2. 使用数学归纳法求出解中的常数，并证明解是正确
+
+    - eg：
+
+        >T(n) = T(n-1)+n	==>	O(n^2)
+        >
+        >T(n) = T(n/2)+1	==>	O(logn)
+        >
+        >T(n) = 2T(n/2)+n	==>	O(nlogn)
+
 - 特点：
 
     - 缺点：程序执行中，递归是利用堆栈来实现的。若递归层数过多，可能会造成栈溢出。
@@ -25,5 +40,5 @@
 - 流程：分解 -- 解决 -- 合并
 - 应用：
     	1. 快速排序、归并排序
-     	2. [折半搜索/二分法](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/notes/binary%20search.md)
+     2. [折半搜索/二分法](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/notes/binary%20search.md)
 

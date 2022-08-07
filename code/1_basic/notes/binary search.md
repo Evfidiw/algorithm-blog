@@ -87,10 +87,15 @@ double bsearch_3(double l, double r){
 
 - eg：
     - lower_bound/upper_bound （返回的是指针位置）
+
     - 求 最大值最小、最小值最大
+
     - 朴素地枚举O(n)进行判断将会超时，而此时二分答案来判断则**优化**到O(logn)
+
         [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1873.cpp)
-- **！tip**：两步走：
+
+- **tip**两步走：
+
     	1. 二分的**判断**就是暴力；
      	2. 然后**优化**枚举范围的效率罢了；
 

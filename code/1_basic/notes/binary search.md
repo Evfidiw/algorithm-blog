@@ -89,14 +89,31 @@ double bsearch_3(double l, double r){
     - lower_bound/upper_bound （返回的是指针位置）
     - 求 最大值最小、最小值最大
     - 朴素地枚举O(n)进行判断将会超时，而此时二分答案来判断则**优化**到O(logn)
-        [eg1]()
+        [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1873.cpp)
+- **！tip**：两步走：
+    	1. 二分的**判断**就是暴力；
+     	2. 然后**优化**枚举范围的效率罢了；
 
 ## 三分
 
 - 应用：
-    - 求极值（二分法求零点）
+
+    - 求一个函数的极值：
+
+        二分法求零点，那么直接求导后用二分法？但如果函数很难求导呢？
+
+        以求极大值为例，[l, r] 中任取两点lmid, rmid (lmid < rmid) 
+
+        - 若f(lmid) < f(rmid)，则极大值在 [lmid, r] , l = lmid；
+
+        - 若f(lmid) > f(rmid)，则极大值在 [l, rmid] , r = rmid；
+
+            （此处可以画图帮忙理解）
+
+        重复进行直至 r-l 在精度范围要求之内
 
 ```c++
+//	求极大值
 double F(double x){
 	double sum=0;
 	for(int i=0; i<=n; i++) sum=sum*x+a[i];	//a[]是函数从高到低的各项系数
@@ -104,9 +121,9 @@ double F(double x){
 }
 
 while(r-l>=eps){
-		double mid = (l+r)/2, fl=F(mid-eps), fr=F(mid+eps);
-		if(fl<fr) l=mid;
-		else r=mid;
+	double mid=(l+r)/2, fl=F(mid-eps), fr=F(mid+eps);
+	if(fl<fr) l=mid;
+	else r=mid;
 }
 ```
 

@@ -92,7 +92,7 @@ double bsearch_3(double l, double r){
 
     - 朴素地枚举O(n)进行判断将会超时，而此时二分答案来判断则**优化**到O(logn)
 
-        [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1873.cpp)
+        [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/luoguP1873.cpp)  [eg2](https://github.com/Evfidiw/acm-blog/blob/main/code/codeforces/402D%20div2.cpp)
 
 - **tip**两步走：
 

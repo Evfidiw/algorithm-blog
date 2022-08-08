@@ -67,14 +67,15 @@ int bsearch_2(int l, int r){	//找符合条件的最大值
 
 //实数
 double bsearch_3(double l, double r){
-    const double eps = 1e-7;   // eps 表示精度，取决于题目对精度的要求
+    const double eps = 1e-6;
     while(r-l > eps){
         double mid = (l+r)/2;
-        if (check(mid)) r = mid;
+        if (check(mid)) r = mid;	//此时同样是向下取整，若符合条件用r来更新
         else l = mid;
     }
     return l;
 }
+//	eps表示精度,取决于题目对精度的要求,建议当要求 保留四位小数时eps=1e-6,八位小数时eps=1e-8
 ```
 
 ### 二分答案

@@ -2,11 +2,11 @@
 
 - 字符串哈希
 
-$ H(S)=\sum^{len}_{i=1}s_i*P^i$
+$H(S)=\sum^{len}_{i=1}s_i*P^i$
 
-$ H(S+c)=H(S)*P+c$
+$H(S+c)=H(S)*P+c$
 
-$ H(T)=H(S+T)-H(S)*P^{len(T)}$
+$H(T)=H(S+T)-H(S)*P^{len(T)}$
 
 ```c++
 char s[N];

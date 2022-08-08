@@ -24,4 +24,4 @@
 
 - eg:
 
-    [eg1](http://poj.org/problem?id=3320)  [eg2]()
+    [eg1](http://poj.org/problem?id=3320)  [eg2](https://github.com/Evfidiw/acm-blog/blob/main/code/1_basic/topics/poj3061.cpp)

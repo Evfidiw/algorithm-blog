@@ -2,7 +2,7 @@
 
 - 字符串哈希
 
-$H(S)=\sum^{len}_{i=1}s_i*P^i$
+$H(S)=\sum{^{len}_{i=1}}s_i*P^i$
 
 $H(S+c)=H(S)*P+c$
 

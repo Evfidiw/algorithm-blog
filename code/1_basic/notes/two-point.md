@@ -23,4 +23,5 @@
     ``````
 
 - eg:
-    - 
+
+    [eg1](http://poj.org/problem?id=3320)  [eg2]()

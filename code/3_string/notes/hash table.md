@@ -1,35 +1,51 @@
-## 【哈希表】
+## 【字符串哈希】
 
-- 字符串哈希
+- 字符串哈希：
 
-$H(S)=\sum{^{len}_{i=1}}s_i*P^i$
+    hash的思想就是“映射到值域较小的范围”。对此，也可以定义一个函数f，将一串字符串映射到整数。
 
-$H(S+c)=H(S)*P+c$
+    而此时要注意的是：
 
-$H(T)=H(S+T)-H(S)*P^{len(T)}$
+    - 在 Hash 函数值不一样的时候，两个字符串一定不一样；
+    - 在 Hash 函数值一样的时候，两个字符串**不一定**一样
+
+    后者这种情况称为哈希碰撞
+
+    所以哈希的方法应该追求“时间复杂度”和“准确”（因为有可能会出现哈希碰撞），通常我们使用多项式哈希，如下：
+
+$H(S)=\sum{^l_{i=1}s[i]\times base\ (mod\ M)}$
+
+$H(T)=(H(S+T)-H(S))\times base^{len(T)}\ (mod\ M)$
+
+​		而此时若发生哈希碰撞，即H(S+T)=H(S)。若M选择素数，则概率只有 (l-1)/M，概率很低。
+
+- 改进：虽然概率很低，但并不能够完全忽略
+    - 自然溢出：
+    - 双哈希
+    - 超大级别的单哈希数
 
 ```c++
+// ull hash
+#define ull unsigned long long
 char s[N];
 ull h[N], p[N];
-const ull P=131;
-
-ull hashs(char s[]){	//single hash
+const ull base=131;
+ull hashs(char s[]){
     int len = strlen(s);
     ull ans = 0;
     for (int i=0; i<len; i++)
-        ans = ans*P+(ull)s[i];
-    return ans&0x7fffffff;
+        ans = ans*base+(ull)s[i];
+    return ans&0x7fffffff;	// 取正
 }
 
-ull ask(int l, int r){	//查询一段区间的哈希值
-	return h[l]-h[l-1]*p[r-l+1];
-}
-p[0]=1;
-for(int i=1; i<=n; i++){
-    	p[i] = p[i-1]*P;            
-    	h1[i] = h1[i-1]*P + s[i];
-	}
+
+// double hash
+
 ```
+
+
+
+## 【哈希表】
 
 - 存储结构：哈希表
 
@@ -40,6 +56,19 @@ for(int i=1; i<=n; i++){
 - time：
 
     - 拉链法：若索引的范围是 [1,M] ，哈希表的大小为 N ，那么一次插入/查询期望时间复杂度为O(N/M)
+
+- 模板
+
+    ```c++
+    ull ask(int l, int r){	//查询一段区间的哈希值
+    	return h[l]-h[l-1]*p[r-l+1];
+    }
+    p[0]=1;
+    for(int i=1; i<=n; i++){
+        p[i] = p[i-1]*P;            
+        h1[i] = h1[i-1]*P + s[i];
+    }
+    ```
 
 - apply：
 
@@ -129,3 +158,5 @@ void find(int k){
 }
 ```
 
+- 资料参考：
+    - [远航之曲blog](http://www.yhzq-blog.cc/%E5%AD%97%E7%AC%A6%E4%B8%B2hash%E6%80%BB%E7%BB%93/)

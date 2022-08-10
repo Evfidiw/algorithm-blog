@@ -38,7 +38,7 @@ if (tt > 0) {}
 
 ```c++
 int top = 0;
-while(n--){	//求左边最靠近自己的数而比自己小的数程序实现
+for(int i=1; i<=n; i++){	//求左边最靠近自己的数而比自己小的数程序实现
     int x=read();
     while(top && stk[top]>=x) top--;	//此时stk[]单调递增
     if(top) printf("%d ",stk[top]);	//如果存在
@@ -47,8 +47,8 @@ while(n--){	//求左边最靠近自己的数而比自己小的数程序实现
 }
 
 for(int i=n; i>=1; i--){ 	///求右边的最靠近的较大数的下标
-    while(top && a[stk[top]]<=a[i]) top--;	//此时a[]单调递减.stk[]存的是下标
-    if(top) pr[i]=stk[top];
+    while(top && stk[a[top]]<=stk[i]) top--;	//此时stk[]单调递减.a	[]存的是下标
+    if(top) pr[i]=a[top];
     else pr[i]=0;
     stk[++top] = i; 
 }

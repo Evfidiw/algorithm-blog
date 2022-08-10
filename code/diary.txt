@@ -6,7 +6,8 @@
 8.11：stack、queue
 8.12：list
 8.13：tree，red-black tree，B tree
-8.14：BIT
-8.15：SegmentTree
-8.20：DFS
+8.14：binary lifting
+8.15：BIT
+8.16：KMP
+8.17：trie
 

@@ -47,7 +47,7 @@ for(int i=1; i<=n; i++){	//求左边最靠近自己的数而比自己小的数�
 }
 
 for(int i=n; i>=1; i--){ 	///求右边的最靠近的较大数的下标
-    while(top && stk[a[top]]<=stk[i]) top--;	//此时stk[]单调递减.a	[]存的是下标
+    while(top && stk[a[top]]<=stk[i]) top--;	//此时stk[]单调递减,a[]存的是下标
     if(top) pr[i]=a[top];
     else pr[i]=0;
     stk[++top] = i; 

@@ -43,7 +43,7 @@ for(int i=1; i<=n; i++){	//求左边最靠近自己的数而比自己小的数�
     while(top && stk[top]>=x) top--;	//此时stk[]单调递增
     if(top) printf("%d ",stk[top]);	//如果存在
     else ...	//如果不存在
-        stk[++top] = x;
+    stk[++top] = x;
 }
 
 for(int i=n; i>=1; i--){ 	///求右边的最靠近的较大数的下标

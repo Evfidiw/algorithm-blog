@@ -33,7 +33,7 @@ if (tt > 0) {}
 - 在左边求比自己小则使栈单调递增（>），在右边求比自己小则使栈单调递减（>）；
             在左边求比自己大则使栈单调递减（<），在右边求比自己大则使栈单调递增（<）；
             （小则>，大则<）
-- eg：[eg1]()
+- eg：[eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/2021GDUT%20B.cpp)
 
 ```c++
 int top = 0;

@@ -10,4 +10,8 @@
 8.15：BIT
 8.16：KMP
 8.17：trie
+8.18：AC
+8.20：manacher
+8.21：palindromic tree
+8.23：DFS
 

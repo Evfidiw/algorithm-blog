@@ -83,7 +83,7 @@ if(a[i].x!=a[i-1].x || a[i-1].y!=a[i].y)
         }
         ```
 
-    - [最长回文子串]()
+    - [最长回文子串](https://github.com/Evfidiw/acm-blog/blob/main/code/3_string/topics/palindromic%20substring.md)
 
 - 资料参考：
 

@@ -5,13 +5,13 @@
 8.10：hash table
 8.11：stack、queue
 8.12：list
-8.13：tree，red-black tree，B tree
-8.14：binary lifting
-8.15：BIT
-8.16：KMP
-8.17：trie
-8.18：AC
-8.20：manacher
-8.21：palindromic tree
-8.23：DFS
+8.14：tree，red-black tree，B tree
+8.15：binary lifting
+8.16：BIT
+8.17：KMP
+8.18：trie
+8.19：AC
+8.21：manacher
+8.22：palindromic tree
+8.24：DFS
 

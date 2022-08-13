@@ -63,7 +63,7 @@ if(a[i].x!=a[i-1].x || a[i-1].y!=a[i].y)
 
 - hack：
 
-    ​	当然，还是存在hack的方法，详细见 [hash killer]()
+    ​	当然，还是存在hack的方法，详细见 [hash killer](https://github.com/Evfidiw/acm-blog/blob/main/code/3_string/topics/hash%20killer.md)
 
 ## 【哈希表】
 

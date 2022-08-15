@@ -1,2 +1,6 @@
 # acm-blog
-the topics of acm-icpc and 《Introduction to Algorithms》
+the topics and personal notes about acm-icpc written in Chinese.
+
+Just to record and share.
+
+Welcome to correct mistakes by [Email](evfxie@163.com).

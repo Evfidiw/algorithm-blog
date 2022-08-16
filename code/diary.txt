@@ -5,14 +5,15 @@
 8.10：hash table
 8.11：stack、queue
 8.12：list
-8.14：tree
-8.15：heap
-8.16：binary lifting
-8.17：BIT
-8.18：KMP
-8.19：trie
-8.20：AC
-8.22：manacher
-8.23：palindromic tree
-8.25：DFS
+8.15：tree
+8.16：heap
+8.17：binary lifting
+8.18：BIT
+8.19：graph
+8.20：union-find sets
+8.21：MST
+8.22：shortest circuit
+8.23：search、DP、greedy
 
+plan1：KMP, trie, AC, manacher, palindromic tree
+plan2：merge heap, SegmentTree，treap

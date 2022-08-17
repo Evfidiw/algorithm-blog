@@ -13,7 +13,9 @@
 8.20：union-find sets
 8.21：MST
 8.22：shortest circuit
-8.23：search、DP、greedy
+8.23：strongly connected
+8.24：search、DP、greedy
 
 plan1：KMP, trie, AC, manacher, palindromic tree
-plan2：merge heap, SegmentTree，treap
+plan2：merge heap, SegmentTree, treap, block
+plan3：NetFlow

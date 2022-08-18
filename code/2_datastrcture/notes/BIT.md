@@ -6,6 +6,11 @@
         - 单点加&查询前缀和
         - 区间加&区间查询
     - 抽象出BIT模型来
+- 思想：
+    - 运用到了位运算、倍增、前缀和的思想
+    - ![img](https://oi-wiki.org/ds/images/fenwick.svg)
+    - 
+- 模板参考：
 
 ```c++
 struct BIT{
@@ -37,5 +42,3 @@ b2.add(x,k*(x-1)); b2.add(y+1,-k*y);
 //区间查询
 y*b1.ask(y) - (x-1)*b1.ask(x-1) - b2.ask(y) + b2.ask(x-1)
 ```
-
-## 

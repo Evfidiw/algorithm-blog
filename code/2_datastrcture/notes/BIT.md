@@ -21,9 +21,9 @@
 
         维护序列a的差分数组b，此时我们对a的一个前缀r求和，得
 
-        $\sum{_{i=1}^ra_i}=\sum{_{i=1}^r}\sum{_{j=1}^i}b_j=\sum{_{i=1}^r}b_i\times(r-i+1)=\sum{_{i=1}^r}b_i\times(r+1)-\sum{_{i=1}^r}b_i\times i$
+$\sum{_{i=1}^ra_i}=\sum{_{i=1}^r}\sum{_{j=1}^i}b_j=\sum{_{i=1}^r}b_i\times(r-i+1)=\sum{_{i=1}^r}b_i\times(r+1)-\sum{_{i=1}^r}b_i\times i$
 
-        变成维护两个树状数组bi和bi×i
+​				变成维护两个树状数组bi和bi×i
 
 - 模板参考：
 

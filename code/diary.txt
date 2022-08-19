@@ -1,21 +1,20 @@
 2022
 8.5：sorting
-8.7：Divide-and-Conquer
-8.8：basic algorithm
-8.10：hash table
+8.7：Divide-and-Conquer、binarysearch
+8.8：basic algorithms（3）
+8.10：hash、hash table
 8.11：stack、queue
 8.12：list
 8.15：tree
-8.16：heap
-8.17：binary lifting
-8.18：BIT
-8.19：graph
-8.20：union-find sets
-8.21：MST
-8.22：shortest circuit
-8.23：strongly connected
-8.24：search、DP、greedy
+8.17：heap
+8.19：binary lifting、ST table
+8.22：LCA、BIT
+8.23：union-find set
+8.24：graph、strongly connected
+8.25：MST、shortest circuit、topsort
+8.27：search、DP、greedy
+
 
 plan1：KMP, trie, AC, manacher, palindromic tree
 plan2：merge heap, SegmentTree, treap, block
-plan3：NetFlow
+plan3： NetFlow

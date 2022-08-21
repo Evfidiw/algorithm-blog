@@ -46,4 +46,6 @@
 
     [区间最值差](http://poj.org/problem?id=3264)
 
+    [区间最频繁的个数](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/UVA11235.cpp)
+
     

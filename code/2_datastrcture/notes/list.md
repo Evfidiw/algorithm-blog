@@ -5,6 +5,7 @@
     - 这里着重介绍用链表实现的邻接表：“链式前向星”
     - 应用：存储图或者树（由邻接矩阵优化）
 - 链式前向星：
+    - 其实可以理解做，**用数组模拟链表**
     - 情况模拟见 [blog](https://blog.csdn.net/sugarbliss/article/details/86495945) （建议自己在草稿上模拟一遍）
 
 ```c++
@@ -37,7 +38,7 @@ void remove(int k){
 //带权
 // n点:head;		m边:to,edge,nxt; 
 // head[x]=idx表示结点x的最后一次加边的下标为idx
-// nxt[idx]表示该边的起点的最后一次加边的下标，故链式前向星遍历顺序与插入顺序相反
+// nxt[idx]表示 以该边的起点，添加该边之前的上一次加边的下标; 故链式前向星遍历顺序与插入顺序相反
 // to[idx]为这条边的终点 
 int idx, head[N], to[M], edge[M], nxt[M];
 
@@ -46,14 +47,16 @@ void init(){
 	idx = 0;
 }
 
-void add(int x, int y, int z){	//添加单向边x->y
+void add(int x, int y, int z)	//添加单向边x->y
+{
     to[++idx] = y;
     edge[idx] = z;
     nxt[idx] = head[x];
     head[x] = idx;
 }
 
-void walk(){	
+void walk()
+{	
 	int x = 1;  //头结点 
 	for(int i=head[x]; i!=-1; i=nxt[i]){	//以下标x为起点的所有边
 		int y=to[i], z=edge[i];

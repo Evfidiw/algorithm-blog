@@ -8,7 +8,7 @@
 8.15：tree
 8.17：heap
 8.19：binary lifting、ST table
-8.22：LCA、BIT
+8.22：BIT
 8.23：union-find set
 8.24：graph、strongly connected
 8.25：MST、shortest circuit、topsort
@@ -17,4 +17,4 @@
 
 plan1：KMP, trie, AC, manacher, palindromic tree
 plan2：merge heap, SegmentTree, treap, block
-plan3： NetFlow
+plan3：LCA、NetFlow

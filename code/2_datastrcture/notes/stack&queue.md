@@ -112,4 +112,4 @@ puts("");
 ## 例题
 
 - eg：
-    - [栈的应用之括号序列]()
+    - [判断括号序列合法](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/bracket%20sequence.md)

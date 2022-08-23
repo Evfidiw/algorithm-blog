@@ -98,7 +98,7 @@ for(int i=1; i<=N; i++){	// N代表要全部初始化
 
 - eg：
 
-    
+    [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/AcWing1250.cpp)	
 
 ## 复杂度
 

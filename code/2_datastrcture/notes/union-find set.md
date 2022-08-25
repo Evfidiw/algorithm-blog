@@ -47,9 +47,12 @@ void merge(int x, int y)
     size[getf(y)] += size[getf(x)];
 }
 
-for(int i=1; i<=n; i++){
-    fa[i]=i;
-    size[i]=1;
+void init()
+{
+    for(int i=1; i<=n; i++){
+    	fa[i]=i;
+    	size[i]=1;
+	}
 }
 
 
@@ -79,13 +82,14 @@ int find(int x, int y)
     return abs(d[x]-d[y])-1;
 }
 
-for(int i=1; i<=N; i++){	// N代表要全部初始化
-    fa[i] = i;
-    d[i] = 0;
-    size[i] = 1;
+void init()
+{
+    for(int i=1; i<=N; i++){	// N代表要全部初始化
+        fa[i] = i;
+        d[i] = 0;
+        size[i] = 1;
+    }
 }
-
-//getf函数相同，距离为abs(d[a]-d[b])-1
 ```
 
 ## 例题
@@ -98,7 +102,7 @@ for(int i=1; i<=N; i++){	// N代表要全部初始化
 
 - eg：
 
-    [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/AcWing1250.cpp)	
+    [eg1](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/AcWing1250.cpp)	[eg2](https://github.com/Evfidiw/acm-blog/blob/main/code/2_datastrcture/topics/luoguP1955.cpp)	
 
 ## 复杂度
 

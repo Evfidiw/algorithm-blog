@@ -10,9 +10,10 @@
 8.19：binary lifting、ST table
 8.22：BIT
 8.23：union-find set
-8.25：graph、strongly connected
-8.26：MST、shortest circuit、topsort
-9.1：search
+8.27：graph、strongly connected
+8.28：MST
+8.29：shortest circuit
+9.4：search
 
 
 plan1：KMP、trie,、AC、manacher、SA

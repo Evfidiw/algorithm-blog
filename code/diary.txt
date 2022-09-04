@@ -12,10 +12,8 @@
 8.23：union-find set
 8.28：graph
 8.29：strongly connected
-8.30：connected
-9.5：MST
-8.6：shortest circuit
-9.7：search
+8.30：shortest circuit、MST
+9.5：search
 
 
 plan1：KMP、trie,、AC、manacher、SA

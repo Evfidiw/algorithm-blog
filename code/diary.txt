@@ -13,10 +13,10 @@
 8.28：graph
 8.29：strongly connected
 8.30：shortest circuit、MST
-9.5：search
+9.5：search、DP、greedy
 
 
-plan1：KMP、trie,、AC、manacher、SA
-plan2：merge heap, SegmentTree, treap, block
-plan3：LCA、NetFlow
-plan4：DP、greedy
+plan1：other graph_algorithm：LCA、NetFlow
+plan2：other ds：merge heap, SegmentTree, treap, block
+plan3：KMP、trie,、AC、manacher、SA
+
